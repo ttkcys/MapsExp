@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="#FFFFFF"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="638dp"
+        android:layout_height="251dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/mainpageresim" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:background="@drawable/linearradius"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="189dp">
+
+        <EditText
+            android:id="@+id/editTxtNereden"
+            android:layout_width="283dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/circle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nereden ?"
+            android:textColor="#59000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/editTxtNereye"
+            android:layout_width="283dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/circle"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Nereye ?"
+            android:textColor="#59000000"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnYolculukAra"
+        android:layout_width="318dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btncerceve"
+        android:text="Yolculuk Ara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
